@@ -10,7 +10,6 @@ export class TasksService {
       `${process.env.NEXT_URL}/api/orders/update-send-types`,
       {
         method: 'PATCH',
-        body: JSON.stringify({ afterDays: 7 }),
       }
     );
     const result = await response.json();
